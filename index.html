@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>KeySprint</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Individual Test</a>
+        <a href="race.html" class="active">Race AI</a>
+    </nav>
+    <div id="container">
+        <h1>Typing Test</h1>
+        <p id="test-text"></p>
+        <textarea id="input-text" placeholder="Start typing here..." disabled></textarea>
+        <div class="stats">
+            <p>Here are your statistics...</p>
+            <p>Time: <span id="time-left">s</span></p>
+            <p>Words: <span id="word-count">0</span></p>
+            <p>Errors: <span id="error-count">0</span></p>
+        </div>
+        <button id="start-btn">Start</button>
+        <button id="restart-btn" disabled>Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

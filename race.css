@@ -1,0 +1,113 @@
+/* Container for User and AI Cards */
+.typing-race-container {
+    display: flex;
+    flex-wrap: wrap; /* Makes it responsive */
+    justify-content: center;
+    gap: 30px; /* Space between cards */
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* User and AI Cards */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 45%; /* Adjusts to 45% width */
+    min-width: 300px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+.card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Informational Text */
+.card .info-text {
+    color: #777;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.stats p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.stats span {
+    color: #007bff;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* Textarea for User Input */
+.card textarea {
+    width: 90%;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+.card textarea:focus {
+    border-color: #007bff;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-btn {
+    background-color: #007bff;
+}
+
+.restart-btn {
+    background-color: #ccc;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
