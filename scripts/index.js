@@ -5,6 +5,38 @@ const errorCount = document.getElementById("error-count");
 const restartBtn = document.getElementById("restart-btn");
 const inputText = document.getElementById("input-text");
 const startBtn = document.getElementById("start-btn");
+const fontSelection = document.getElementById("font-selection"); 
+
+fetch("data/google-fonts.json") 
+    .then((response) => response.json())
+    .then((fonts) => {
+        fonts.items.forEach((font) => {
+            const option = document.createElement("option"); 
+            option.value = font.family; 
+            option.textContent = font.family; 
+            fontSelection.appendChild(option); 
+        });
+    })
+    .catch((error) => console.error("Error loading fonts:", error)); 
+
+
+fontSelection.addEventListener("change", (e) => {
+    const selectedFont = e.target.value; 
+
+    if (selectedFont) {
+        const fontLink = document.createElement("link"); 
+        fontLink.rel = "stylesheet"; 
+        fontLink.href = `https://fonts.googleapis.com/css2?family=${selectedFont.replace(" ","+")}&display=swap`;
+        const oldLink = document.getElementById("dynamic-font-link"); 
+        if (oldLink) {
+            oldLink.remove(); 
+        }
+        fontLink.id = "dynamic-font-link"; 
+        document.head.appendChild(fontLink);
+        typingTest.style.fontFamily = `'${selectedFont}', sans-serif`;
+        inputText.style.fontFamily = `'${selectedFont}', sans-serif`; 
+    }
+});
 
 let timer = 60;
 let errors = 0;

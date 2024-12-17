@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +13,18 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow-y: auto; /* Allow scrolling for larger content */
+    min-height: 100vh;
+    overflow-y: auto; 
     margin: 0;
+}
+
+#logo {
+    height: 130px; 
+    position: relative; 
+    top: 0px; 
+    margin-top: 0px; 
+    margin-bottom: 4px; 
+
 }
 
 nav {
@@ -35,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-    color: lightgreen; 
+    color: #90ee90; 
     transition: color 0.5s ease;
 }
 
@@ -43,13 +52,13 @@ nav a:hover {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 600px; /* Increased width for better text readability */
-    max-width: 90%; /* Ensure responsiveness */
+    width: 600px; 
+    max-width: 90%; 
     padding: 30px;
     text-align: center;
-    margin: 20px auto; /* Center the container */
-    overflow-y: auto; /* Handle overflowing content */
-    max-height: 90vh; /* Prevent the container from growing too large */
+    margin: 20px auto; 
+    overflow-y: auto;
+    max-height: 90vh; 
 }
 
 h1 {
@@ -64,10 +73,10 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    font-size: 1.1rem; /* Adjusted font size for long text */
-    max-height: 300px; /* Add scrolling if text is too long */
-    overflow-y: auto; /* Enable scrolling for long paragraphs */
-    line-height: 1.8; /* Increased line spacing for readability */
+    font-size: 1.1rem; 
+    max-height: 300px; 
+    overflow-y: auto; 
+    line-height: 1.8; 
     text-align: left;
     color: #555;
     margin: 20px 0;
@@ -75,7 +84,7 @@ h1 {
 
 #input-text {
     width: 100%;
-    height: 120px; /* Slightly increased height */
+    height: 120px; 
     border: 2px solid #ddd;
     border-radius: 5px;
     padding: 10px;
@@ -85,7 +94,7 @@ h1 {
     color: #333;
     background-color: #fdfdfd;
     transition: border 0.3s ease;
-    overflow-y: auto; /* Handle long user input */
+    overflow-y: auto; 
 }
 
 #input-text:focus {
@@ -100,20 +109,20 @@ h1 {
 }
 
 .stats p {
-    font-size: 1.1rem; /* Slightly larger for better visibility */
+    font-size: 1.1rem; 
     font-weight: bold;
     color: #555;
     margin: 8px 0;
 }
 
 .stats span {
-    font-size: 1.6rem; /* Highlight numbers */
+    font-size: 1.6rem;
     color: #007bff;
 }
 
 button {
-    padding: 12px 25px; /* Adjust button size */
-    margin: 10px 5px; /* Add spacing between buttons */
+    padding: 12px 25px; 
+    margin: 10px 5px; 
     border: none;
     border-radius: 5px;
     background-color: #007bff;
@@ -126,7 +135,7 @@ button {
 
 button:hover {
     background-color: #0056b3;
-    transform: scale(1.05); /* Add slight zoom on hover */
+    transform: scale(1.05); 
 }
 
 button:disabled {
@@ -136,19 +145,19 @@ button:disabled {
 
 @media (max-width: 768px) {
     #container {
-        width: 95%; /* Make it responsive for smaller screens */
+        width: 95%; 
         padding: 20px;
     }
 
     h1 {
-        font-size: 1.8rem; /* Adjust heading size */
+        font-size: 1.8rem; 
     }
 
     #test-text {
-        font-size: 1rem; /* Adjust font for readability */
+        font-size: 1rem; 
     }
 
     button {
-        padding: 10px 20px; /* Adjust button padding */
+        padding: 10px 20px; 
     }
 }

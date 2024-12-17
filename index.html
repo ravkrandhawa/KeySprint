@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>KeySprint</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
+    <img id="logo" alt="keysprint-logo" src="./images/keysprint-logo.png"/>
     <nav>
         <a href="index.html">Individual Test</a>
         <a href="race.html" class="active">Race AI</a>
@@ -16,6 +17,10 @@
         <h1>Typing Test</h1>
         <p id="test-text"></p>
         <textarea id="input-text" placeholder="Start typing here..." disabled></textarea>
+        <label for="font-selection">Choose a Font: </label>
+        <select id="font-selection">
+            <option value="">Select a font...</option>
+        </select>
         <div class="stats">
             <p>Here are your statistics...</p>
             <p>Time: <span id="time-left">s</span></p>
@@ -25,7 +30,7 @@
         <button id="start-btn">Start</button>
         <button id="restart-btn" disabled>Restart</button>
     </div>
-    <script src="script.js"></script>
+    <script src="/scripts/index.js"></script>
 </body>
 
 </html>

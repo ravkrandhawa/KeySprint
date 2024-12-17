@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Test - Race AI</title>
-    <link rel="stylesheet" href="style.css"> <!-- Base CSS -->
-    <link rel="stylesheet" href="race.css"> <!-- Race-specific CSS -->
+    <link rel="stylesheet" href="./styles/style.css"> 
+    <link rel="stylesheet" href="./styles/race.css"> 
 </head>
 <body>
-    <!-- Navigation -->
+    <img id="logo" alt="keysprint-logo" src="./images/keysprint-logo.png"/>
     <nav>
         <a href="index.html">Individual Test</a>
         <a href="race.html">Race AI</a>
     </nav>
 
-    <!-- Race Typing Container -->
     <div class="typing-race-container">
-        <!-- User Typing Card -->
         <div class="card">
             <h2>User Typing</h2>
             <p id="test-text" class="info-text">The race text will appear here...</p>
@@ -28,7 +26,6 @@
             </div>
         </div>
 
-        <!-- AI Typing Card -->
         <div class="card">
             <h2>AI Typing</h2>
             <p id="ai-progress" class="info-text">The AI's progress will appear here...</p>
@@ -39,11 +36,10 @@
         </div>
     </div>
 
-    <!-- Buttons -->
     <div class="buttons">
         <button id="start-btn" class="start-btn">Start</button>
         <button id="restart-btn" class="restart-btn" disabled>Restart</button>
     </div>
-    <script src="./race.js"></script>
+    <script src="./scripts/race.js"></script>
 </body>
 </html>

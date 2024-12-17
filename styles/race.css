@@ -1,21 +1,29 @@
-/* Container for User and AI Cards */
+
 .typing-race-container {
     display: flex;
-    flex-wrap: wrap; /* Makes it responsive */
+    flex-wrap: wrap; 
     justify-content: center;
-    gap: 30px; /* Space between cards */
+    gap: 30px; 
     margin: 20px auto;
     width: 90%;
     max-width: 1000px;
 }
 
-/* User and AI Cards */
+#logo {
+    height: 130px; 
+    position: relative; 
+    top: 0px; 
+    margin-top: 0px; 
+    margin-bottom: 4px; 
+
+}
+
 .card {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    flex: 1 1 45%; /* Adjusts to 45% width */
+    flex: 1 1 45%; 
     min-width: 300px;
     text-align: center;
     transition: box-shadow 0.3s ease;
@@ -25,7 +33,6 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Headings */
 .card h2 {
     font-size: 1.6rem;
     margin-bottom: 15px;
@@ -34,14 +41,12 @@
     font-weight: bold;
 }
 
-/* Informational Text */
 .card .info-text {
     color: #777;
     font-size: 1rem;
     margin-bottom: 20px;
 }
 
-/* Stats Section */
 .stats {
     display: flex;
     flex-direction: column;
@@ -79,7 +84,6 @@
     border-color: #007bff;
 }
 
-/* Buttons */
 .buttons {
     margin-top: 20px;
     text-align: center;
