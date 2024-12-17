@@ -7,7 +7,7 @@ const inputText = document.getElementById("input-text");
 const startBtn = document.getElementById("start-btn");
 const fontSelection = document.getElementById("font-selection"); 
 
-fetch("data/google-fonts.json") 
+fetch("./data/google-fonts.json") 
     .then((response) => response.json())
     .then((fonts) => {
         fonts.items.forEach((font) => {
